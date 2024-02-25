@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog site</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="w-11/12 mx-auto text-center mb-10">
+        <p class="text-4xl font-bold">Blogs</p>
+    </header>
+    <main>
+        <section>
+            <div id="blog-container" class="w-11/12 mx-auto mb-10">
+                <!-- var,let,const div -->
+                <div class="card card-side bg-base-100 shadow-xl flex lg:h-[420px] flex-col lg:flex-row">
+                    <div class="flex-1">
+                        <figure><img class="w-full lg:h-[420px] rounded-l-lg"  src="./images/var-let-const.png" alt="Movie"/></figure>
+                    </div>
+                    <div class="card-body flex-1">
+                      <h2 class="card-title text-2xl font-semibold">In this Blog i will discuss the scope of var, let, and const</h2>
+                      <hr>
+                        <ul class="list-disc">
+                            <p class="text-lg font-bold">Var:</p>
+                            <li>var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.var variables can be re-declared and updated</li>
+                            <p class="text-lg font-bold">let:</p>
+                            <li>let is block scoped.So a variable declared in a block with let  is only available for use within that block.let can be updated but not re-declared.</li>
+                            <p class="text-lg font-bold">Const:</p>
+                            <li>const declarations are block scoped.Like let declarations, const declarations can only be accessed within the block they were declared.const cannot be updated or re-declared</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <!-- null and undifiend -->
+                  <div class="card card-side flex-col bg-base-100 shadow-xl flex lg:h-[420px] lg:flex-row mt-8 ">
+                    <div class="flex-1">
+                        <figure><img class="w-full object-contain md:object-cover lg:h-[420px] rounded-l-lg"  src="./images/null-undifine.jpg" alt="Movie"/></figure>
+                    </div>
+                    <div class="card-body flex-1">
+                      <h2 class="card-title text-2xl font-semibold">In this Blog Tell us the use cases of null and undefined</h2>
+                      <hr>
+                        <ul class="list-disc">
+                            <p class="text-lg font-bold">null:</p>
+                            <li>Null is an object in JavaScript and represents primitive data types. A null value in JavaScript is used for referring absence of any object value and if any function or variable returns null, then we can infer that the object could not be created.</li>
+                            <p class="text-lg font-bold">undefined:</p>
+                            <li>The undefined property indicates that a variable has not been assigned a value, or not declared at all.</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <!-- rest api -->
+                  <div class="card card-side bg-base-100 shadow-xl flex flex-col lg:h-[420px] lg:flex-row mt-8">
+                    <div class="flex-1">
+                        <figure><img class="w-full object-contain md:object-cover lg:h-[420px] rounded-l-lg"  src="./images/rest.png" alt="Movie"/></figure>
+                    </div>
+                    <div class="card-body flex-1">
+                      <h2 class="card-title text-2xl font-semibold">In this blog i will explain do i mean by REST API?
+                    </h2>
+                      <hr>
+                        <ul class="list-disc">
+                            <p class="text-lg font-bold">Rest api:</p>
+                            <li>REST stands for representational state transfer.Representational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services. REST API is a way of accessing web services in a simple and flexible way without having any processing.</li>
+                        </ul>
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
